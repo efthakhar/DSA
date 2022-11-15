@@ -1,7 +1,8 @@
 #include <iostream>
 
 // function to print an array
-void printArray(int array[], int size) {
+void printArray(int array[], int size) 
+{
 
   for (int i = 0; i < size; i++) {
     std::cout << array[i] << " ";
@@ -16,6 +17,7 @@ int main()
     
     int arr[] = { 9, 3, 4, 2 };
     int size = sizeof(arr) / sizeof(arr[0]);
+    printArray(arr,size);
     
     for(int i = 0; i < size; i++)
     {
@@ -28,18 +30,16 @@ int main()
           {
             lowest_index = j;  
           } 
-          //std::cout << arr[lowest_index] << std::endl;
-        
+       
       }
 
       int temp = arr[i];
       arr[i] = arr[lowest_index];
       arr[lowest_index] = temp;
-     
       
     }
     
-  printArray(arr,size);
-  return 0;
+    printArray(arr,size);
+    return 0;
 
 }
