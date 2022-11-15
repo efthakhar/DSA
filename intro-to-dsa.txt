@@ -2,3 +2,4 @@ Welcome to data structure and algorithm with c/c++
 ==================================================
 resources: 
 =========
+1. https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU

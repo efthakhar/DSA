@@ -1,0 +1,9 @@
+
+Process of Selection Sort:
+
+1. Find out the lowest element from the given array
+2. Swap the lowest element with the first element 
+3. Then Again find out the lowest element from the subarray
+   which will obtained by excluding the first element
+   and repeat step 2
+   
