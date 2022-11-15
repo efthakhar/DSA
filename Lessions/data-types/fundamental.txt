@@ -1,0 +1,23 @@
+
+1 Byte = 8 bit
+==> intiger will take 4 bytes in memory
+==> intiger will take 4 bytes in memory
+
+
+================
+array
+================
+=> definition: array is a fixed sized sequenced collection of data items of same data type
+
+=> declaration of array in c++
+   int arr[3];
+   datatypes array_name[array_size];
+
+=> accession array element : array_name[index_of_element]
+=> random access of element is possible in array
+=> array size which is declared in complile tile can not be altered in runtime
+
+
+array operations:
+================
+1. Traversal:Traversal means visiting every element of array exactly once
