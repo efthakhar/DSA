@@ -40,7 +40,6 @@ int main()
         std::cout << *(arr + i) << " ";
     }
 
-
     std::cout << "\n" ;
 
     std::cout << "array elements' addresses: " << std::endl;
