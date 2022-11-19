@@ -1,0 +1,21 @@
+
+Linked List:
+===========
+Linked list is a collection of data items where items are stored in 
+non-consecutive/scattered locations of memory
+
+** collection of nodes where each nodes stores a value and the address of next node
+** Only sequentioal access is possible 
+** every linked list has a head node which stores the address of first node
+** last node store null value in address of next node in one directioal linked list
+** in worst case time complexity of accessing of any element is O(n) and 1 in case of best case
+** insertiona and deletion of items is easy in linked list rather than Array
+
+*** Binary search is not possible in linked list
+
+Array:
+===========
+Array is a collection of data items where items are stored in
+consecutive locations of memory
+** random access is possible
+** accessing elements in Array will take time complexity of O(1)
