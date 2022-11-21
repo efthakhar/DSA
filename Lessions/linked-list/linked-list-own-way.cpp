@@ -51,9 +51,7 @@ class LinkedList{
             current_node->next = newNode;
         }
     }
-
-
-    
+ 
     void addNodeAfter(int after, int data)
     {
         node *temp = head;
@@ -72,6 +70,7 @@ class LinkedList{
             temp = temp->next;
         }
     }
+
     void addNodeBefore(int before, int data)
     {
         node *temp = head;
@@ -92,6 +91,7 @@ class LinkedList{
             temp = temp->next;
         }
     }
+
     void deleteNode(int data)
     {
         node *temp = head;
@@ -115,6 +115,23 @@ class LinkedList{
             prev = temp;         
             temp = temp->next;
         }
+    }
+
+    void reverse() 
+    {
+        node *current = head;
+        node *next = NULL ;
+        node *prev = NULL;
+
+        while(current != NULL)
+        { 
+            next = current->next;
+            current->next = prev;
+            prev = current;
+            current = next;     
+        }
+        
+        head = prev; 
     }
     
     void printList()
@@ -140,30 +157,37 @@ int main()
     LinkedList li;
     
     // adding node elements at the end of list
+    li.addNodeEnd(1);
     li.addNodeEnd(2);
     li.addNodeEnd(3);
-    li.addNodeEnd(12);
+    li.addNodeEnd(4);
+    li.addNodeEnd(5);
     li.printList();
 
-    // adding node element at begining of list
-    li.addNodeFirst(73);
-    li.printList();
+    //adding node element at begining of list
+    //li.addNodeFirst(73);
+    //li.printList();
 
     // add node after certain element
-    li.addNodeAfter(3,5);
-    li.addNodeAfter(2,25);
-    li.printList();
+    // li.addNodeAfter(3,5);
+    // li.addNodeAfter(2,25);
+    // li.printList();
 
     // add node before certain element
-    li.addNodeBefore(2,90);
-    li.addNodeBefore(3,389);
-    li.printList();
+    // li.addNodeBefore(2,90);
+    // li.addNodeBefore(3,389);
+    // li.printList();
 
     // delete certain element
-    li.deleteNode(2);
-    li.deleteNode(73);
-    li.printList();
+    // li.deleteNode(2);
+    // li.deleteNode(73);
+    // li.printList();
+
+    // reverse linked list
+     li.reverse();
+     li.printList();
 
     return 0;
+
     
 }

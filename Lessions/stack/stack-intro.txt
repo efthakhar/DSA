@@ -1,0 +1,32 @@
+
+Stack:
+=========
+=> stack is a linear data structure
+=> random access like array is not possible here. Only sequential access is possible
+=> stack data structure follws a special rules which is : 
+   both insertion and deletion is possible from only one end
+
+   *** in stack last inserted element can take out first. 
+       Therefore, stack follow the rule "LAST in FIRST out"/ LIFO
+
+        যে লাস্টে প্রবেশ করে সে সবার আগে বের হবে। 
+        আর যে সবার আগে প্রবেশ করে সে বের হয় সবার পরে।
+
+=> Insertion in stack is called push 
+=> Deletion in stack is called pop
+=> Push and Pop can be performed from only one end which is known as "Top"
+
+=> Operations in Stack Data structure:
+   1. Push ( Add new element at top )
+   2. Pop  ( Remove topmost element from stack )
+   3. Peek/Top ( Return Top most element of stack )
+
+
+=> Some use case of Stack data structure:
+   1. Reversing String (ABCD)=>(DCBA)
+   2. Undo mechanism 
+   3. Recursion
+   4. Varifying Balance of parenthesis
+   5. Infix to Postfix Conversion
+   6. Evolution of Postfix expression
+   
