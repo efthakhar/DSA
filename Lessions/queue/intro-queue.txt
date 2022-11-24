@@ -1,0 +1,25 @@
+
+Queue:
+==========
+=> It is a ordered list where isertion is performed in rear/tail end 
+   and deletion is performed in front/head end.
+=> Queue maintain the rules First IN First Out or "FIFO" rule.
+=> isertion data in queue is known as enqueue and deletion is known as dequeue
+
+Operations in Queue:
+====================
+1. Enqueue (insert new element at rear end)
+2. Dequeue (delete element from front end)
+3. Front/Peek (get the front of queue)
+4. isFull (check if the queue is full)
+5. isEmpty (check if queue is empty)
+
+*** ALL Operations listed above take O(1) time
+
+===============================================
+We can implement queue data structure using :
+1. Array 
+2. Linked List 
+3. Stack
+===============================================
+

@@ -1,0 +1,5 @@
+
+Binary Expression Tree:
+======================
+A Binary tree which is used to represent a Expression.
+

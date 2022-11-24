@@ -1,0 +1,55 @@
+
+=> Expression is a combination of variables, constant and symbols
+
+=> infix expression   : <operand> <operator> <operand>  
+=> prefix expression  : <operator> <operands>
+=> postfix expression : <operands><operator> 
+
+=> to evaluate prefix and postfix don't need any associativity or presidence of operators 
+   like infix expression
+
+presidence of operators:
+========================
+1. (),{},[]
+2. power -> R-L
+3. *,/   -> L-R
+4. +,-   -> L-R
+
+
+
+Infix to Postfix conversion rules:
+=================================
+1. Prints operands as they arrive
+2. If stack is empty or contain a left parenthesis on top 
+   push the incoming operator onto the stack
+3. If incoming symbol is '(' push it onto stack
+4. if incoming symbol is ')' , pop the stack and prints 
+   print the operators untill '(' is found
+5. If incoming operator has higher presidence than the top of the stack, 
+   push it one the stack      
+6. If incoming operator has lower presidence than the top of the stack, 
+   pop and print the top . Then test the new incoming operator against the top 
+7. if incoming operator has same presidence with the top 
+   follow the associativity rule
+8. At end pop and prints all operators of stack   
+
+associativity rule:
+===================
+1.if associativity is left-right then pop the top from stack and print it and push the incoming operator
+2. if associativity is right-left directly push the operator to stack
+
+
+Evolution of postfix expression:
+==================================
+foreach element of expression 
+
+if operand encountered 
+               push it to stack
+if operator encountered 
+               pop top and top next elements from stack
+               and result = topnext operator top
+               and push the result onto stack
+
+Finally at the end of scanning all elemens print the top element of stack.
+ this is the result of postfix expression
+

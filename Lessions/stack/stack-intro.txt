@@ -29,4 +29,12 @@ Stack:
    4. Varifying Balance of parenthesis
    5. Infix to Postfix Conversion
    6. Evolution of Postfix expression
+
+
+
+
+=> During linked list implementation of stack:
+1. We will push new items always at begining
+2. Head node will poin the top of stack
+
    
